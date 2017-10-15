@@ -1,0 +1,22 @@
+{
+  "name": "micro-service",
+  "version": "0.1.0",
+  "description": "Micro Services demo with AWS Lambda",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dist": "sls deploy -v"
+  },
+  "keywords": [
+    "lambda",
+    "serverless",
+    "nodejs",
+    "microservices",
+    "microservice"
+  ],
+  "author": "Christian Broberg",
+  "license": "MIT",
+  "devDependencies": {
+    "serverless-offline": "^3.16.0"
+  }
+}

@@ -1,0 +1,17 @@
+service: micro-service
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+
+# you can overwrite defaults here
+  stage: prod
+#  region: us-east-1
+
+functions:
+  hello:
+    handler: handler.goserverless
+    events:
+      - http:
+          path: go/get
+          method: get
