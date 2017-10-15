@@ -5,8 +5,8 @@
   "main": "handler.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-	"dist": "sls deploy -v",
-	"start": "serverless offline start"
+    "dist": "sls deploy -v",
+    "start": "serverless offline start"
   },
   "keywords": [
     "lambda",
@@ -17,7 +17,14 @@
   ],
   "author": "Christian Broberg",
   "license": "MIT",
+  "repository": {
+	"type": "git",
+	"url": "git+https://github.com/cbroberg/micro-service.git"
+},
   "devDependencies": {
     "serverless-offline": "^3.16.0"
+  },
+  "dependencies": {
+    "isomorphic-fetch": "^2.2.1"
   }
 }
