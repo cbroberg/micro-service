@@ -1,28 +1,5 @@
 'use strict'
 
-const photos = require('./photos')
-
-console.log('Module executing ... ')
-
-module.exports.goserverless = (event, context, callback) => {
-	const response = {
-		statusCode: 200,
-    	body: JSON.stringify({
-			  message: 'Go Serverless v1.0! Your function executed successfully!',
-			  keys: '10',
-			  localphotos: photos(),
-			//   input: event,
-    }),
-  }
-
-  callback(null, response)
-
-  // Use this code if you don't use the http event with the LAMBDA-PROXY integration
-  // callback(null, { message: 'Go Serverless v1.0! Your function executed successfully!', event })
-}
-
-/* 
-
 const getLocalPhotos = () => {
 	return photos
 }
@@ -58,11 +35,4 @@ const photos = [
 	}
 ]
 
-const getRemoteUsers = async () => {
-    const response = await request.get('https://jsonplaceholder.typicode.com/users')
-
-    
-}
-
-*/
-
+module.exports = getLocalPhotos
